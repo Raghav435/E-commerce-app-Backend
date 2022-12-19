@@ -7,6 +7,8 @@ const productController = require("./controllers/product.controller");
 const userRouter = require("./routes/user.route");
 const userController = require("./controllers/user.controller");
 const paymentController = require("./controllers/payment.controller");
+const stripe = require("stripe")("sk_test_51L97nDSJamWgxW3Fu5ttWzME3WdHNf87wOhrI1VjW8hTAcxU9Ik8E5OsQpFhzuuDOcBxDL5fWjNwvaFEgut0EMKd00UPm1xq20")
+
 
 const app = express();
 app.use(cors());
